@@ -13,9 +13,9 @@ c. Describe the steps to open a pull request?
 In order to open a pull request, the following steps may be taken:
 1. Clone repository (git clone <LINK>)
 2. Create new branch (git checkout -b <branchname>)
-3. Make code changes (edit code in the brunch)
+3. Make code changes (edit code in the brunch), save the changes
 4. Submit Commit Changes (git add (-A if all, or select files) ), then git commit -m "add comment here"
-5. Push changes to GitHub (git push origin <branchname>)
+5. Push changes to GitHub (git push, OR git push origin <branchname>, or git push --set-upstream origin <branchname> if this branch was only created on your local computer)
 6. Open pull request on GitHub:
     6.1 Go to the Repository on GitHub: After pushing your branch to GitHub, go to the repository’s page in your web browser.
     6.2 Locate the Branch: You should see an option to compare and open a pull request directly if you recently pushed a new branch. Alternatively, you can manually navigate to the Pull Requests tab.
@@ -26,6 +26,32 @@ In order to open a pull request, the following steps may be taken:
 ======================
 d. Describe the steps to add a collaborator to a repository (share write permissions)
 
+To add a collaborator to a GitHub repository and share write permissions, follow these steps:
+Step 1: Navigate to Your Repository
+    Log in to GitHub: Go to GitHub and log in to your account.
+    Open Your Repository: Find the repository where you want to add a collaborator by navigating to your repositories or searching for it.
+
+Step 2: Go to Repository Settings
+    Click on the "Settings" Tab: Inside your repository, locate the Settings tab at the top of the page. It’s usually on the far right of the repository’s navigation bar.
+
+Step 3: Manage Access
+    Click on "Manage Access": In the left sidebar of the Settings page, scroll down and find the "Manage Access" section. This section controls who has access to the repository.
+    Click on "Invite a Collaborator": Within the "Manage Access" section, you’ll see an option to invite collaborators. Click the "Invite a collaborator" button.
+
+Step 4: Add the Collaborator
+    Enter the GitHub Username or Email: In the invite field, start typing the username, full name, or email address of the person you want to invite as a collaborator.
+    Select the Correct User: From the dropdown, select the correct user you wish to invite.
+
+Step 5: Send the Invitation
+    Click "Add Collaborator": After selecting the user, click the "Add collaborator" button.
+    Wait for Acceptance: The collaborator will receive an email invitation. They need to accept the invitation to gain access to the repository.
+
+Step 6: Set Permissions (Optional)
+    By default, the collaborator will have write permissions. If you want to adjust their permission level (e.g., Admin access or read-only), you can do so from the "Manage Access" section after they accept the invitation.
+
+Step 7: Collaborator Accepts Invitation
+    Collaborator Accepts via Email: The person you invited will receive an email notification. They need to click the link in the email and accept the invitation.
+    Collaborator Now Has Access: Once they accept, the collaborator will have write access to the repository and can push changes, create branches, and make other contributions depending on their permissions.
 ======================
 e. What is the difference between git and GitHub?
 
